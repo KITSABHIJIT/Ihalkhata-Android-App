@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <!-- User Image and User Name -->
+
+            <ImageView
+                android:id="@+id/userImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:contentDescription="@string/cmp_desc"
+                android:paddingBottom="10dip"
+                android:src="@drawable/loading"
+                android:tag="Calbook" />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/rowTextHeader"
+                android:layout_toRightOf="@+id/userImg"
+                android:padding="25dip"
+                android:text="@string/loading" />
+
+            <!-- Debit Information of the User -->
+
+            <ImageView
+                android:id="@+id/debit"
+                style="@style/rowImage"
+                android:layout_below="@+id/userImg"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/cmp_desc"
+                android:src="@drawable/gointo" />
+
+            <TextView
+                android:id="@+id/debitText"
+                style="@style/rowText"
+                android:layout_below="@+id/userImg"
+                android:layout_toRightOf="@+id/debit"
+                android:text="@string/debitText" />
+
+            <TextView
+                android:id="@+id/debitValue"
+                style="@style/rowValue"
+                android:layout_below="@+id/userImg"
+                android:layout_toRightOf="@+id/debitText"
+                android:text="@string/loading" />
+
+            <!-- Credit Information of the User -->
+
+            <ImageView
+                android:id="@+id/credit"
+                style="@style/rowImage"
+                android:layout_below="@+id/debit"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/cmp_desc"
+                android:src="@drawable/gobackicon" />
+
+            <TextView
+                android:id="@+id/creditText"
+                style="@style/rowText"
+                android:layout_below="@+id/debit"
+                android:layout_toRightOf="@+id/credit"
+                android:text="@string/creditText" />
+
+            <TextView
+                android:id="@+id/creditValue"
+                style="@style/rowValue"
+                android:layout_below="@+id/debit"
+                android:layout_toRightOf="@+id/creditText"
+                android:text="@string/loading" />
+
+            <!-- Gainer Information of the User -->
+
+            <ImageView
+                android:id="@+id/up"
+                style="@style/rowImage"
+                android:layout_below="@+id/credit"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/cmp_desc"
+                android:src="@drawable/upicon" />
+
+            <TextView
+                android:id="@+id/upText"
+                style="@style/rowText"
+                android:layout_below="@+id/credit"
+                android:layout_toRightOf="@+id/up"
+                android:text="@string/upText" />
+
+            <TextView
+                android:id="@+id/upValue"
+                style="@style/rowValue"
+                android:layout_below="@+id/credit"
+                android:layout_toRightOf="@+id/upText"
+                android:text="@string/loading" />
+
+            <!-- Gainer Information of the User -->
+
+            <ImageView
+                android:id="@+id/down"
+                style="@style/rowImage"
+                android:layout_below="@+id/up"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/cmp_desc"
+                android:src="@drawable/downicon" />
+
+            <TextView
+                android:id="@+id/downText"
+                style="@style/rowText"
+                android:layout_below="@+id/up"
+                android:layout_toRightOf="@+id/down"
+                android:text="@string/downText" />
+
+            <TextView
+                android:id="@+id/downValue"
+                style="@style/rowValue"
+                android:layout_below="@+id/up"
+                android:layout_toRightOf="@+id/downText"
+                android:text="@string/loading" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

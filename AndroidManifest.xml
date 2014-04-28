@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ihalkhata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.example.ihalkhata.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.ihalkhata.permission.C2D_MESSAGE" />
+
+    <!-- receives GCM messages -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google services -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+
+    <!-- wake the processor if a GCM message is received -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ihalkhata.activity.OnLoadActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Ihalkhata" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Login / LoginActivity -->
+        <activity
+            android:name="com.example.ihalkhata.activity.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Login" >
+        </activity>
+        <!-- Notification / NotificationReceiverActivity -->
+        <activity
+            android:name="com.example.ihalkhata.notificationmanager.NotificationReceiverActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Notification" >
+        </activity>
+        <!-- Updates / UpdatesReceiverActivity -->
+        <activity
+            android:name="com.example.ihalkhata.notificationmanager.UpdatesReceiverActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Notification" >
+        </activity>
+        <!-- Notification / NotificationActivity -->
+        <activity
+            android:name="com.example.ihalkhata.activity.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Ihalkhata" >
+        </activity>
+        <!-- Try Again / TryAgainActivity -->
+        <activity
+            android:name="com.example.ihalkhata.activity.TryAgainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Try Again" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.ihalkhata" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.example.ihalkhata.GCMIntentService" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/individual_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:paddingTop="2dp"
+        android:text="@string/date"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/individual_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/individual_date_label"
+        android:paddingTop="2dp"
+        android:text="@string/loading"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_below="@id/individual_date"
+        android:contentDescription="@string/icon_desc"
+        android:src="@drawable/item" />
+
+    <TextView
+        android:id="@+id/individual_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_date"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_image"
+        android:text="@string/loading"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/individual_desc_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_item"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:text="@string/desc"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/individual_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_item"
+        android:layout_toRightOf="@+id/individual_desc_label"
+        android:text="@string/loading"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/money_image"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/individual_date"
+        android:layout_toLeftOf="@+id/individual_amount"
+        android:contentDescription="@string/icon_desc"
+        android:src="@drawable/expense" />
+
+    <TextView
+        android:id="@+id/individual_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_date"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="@string/loading"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>

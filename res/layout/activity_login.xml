@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- Email input text -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:contentDescription="@string/cmp_desc"
+        android:src="@drawable/logo"
+        android:tag="Calbook" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:contentDescription="@string/cmp_desc"
+        android:inputType="text" />
+
+    <!-- Password input text -->
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:contentDescription="@string/cmp_desc"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <!-- Login button -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login" />
+
+</LinearLayout>

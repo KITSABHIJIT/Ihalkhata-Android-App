@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ihalkhata</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="loading">loading…</string>
+    <string name="na">Not Available\nNot Available</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="icon_desc">Ihalkhata Icon</string>
+    <string name="cmp_desc">Ihalkhata Component</string>
+    <string name="debitText">Debit\nAmount</string>
+    <string name="creditText">Credit\nAmount</string>
+    <string name="upText">Top\nGainer</string>
+    <string name="downText">Top\nLoser</string>
+    <string name="payments">Payments at a glance</string>
+    <string name="period">Period</string>
+    <string name="expense">Expenses</string>
+    <string name="offering">Offerings</string>
+    <string name="daterange_prompt">Choose a datarange</string>
+
+    <string-array name="daterange_arrays">
+        <item>Current Month</item>
+        <item>Last month</item>
+        <item>Last Quarter</item>
+        <item>Last Year</item>
+    </string-array>
+
+    <string name="date">Date</string>
+    <string name="desc">Description</string>
+    <string name="per_head">Per Head</string>
+    <string name="from">From</string>
+    <string name="item">ItemType</string>
+    <string name="amount">Amount</string>
+    <string name="shareholders">Shareholders</string>
+    <string name="count">Count</string>
+    <string name="paidby">Paid By</string>
+    <string name="selectdate">Select Date</string>
+    <string name="allshareholders"> All</string>
+    <string name="personal"> Personal</string>
+    <string name="enterdata">Enter Data</string>
+    <string name="select">Select</string>
+    <string name="proceed">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm details</string>
+    <string name="str_hnt_autocomplete">Enter Item</string>
+    <string name="str_hnt_date">Enter Date</string>
+    <string name="str_hnt_desc">Enter Description</string>
+    <string name="str_hnt_shareholder">Shareholders</string>
+    <string name="str_hnt_amount">Enter Amount</string>
+    <string name="str_hnt_paidby">Paid By</string>
+    <string name="try_again">try again</string>
+    <string name="no_data">No Data Available</string>
+    <string name="try_again_text">Well this is embarrassing,\n\t\t\t\tServer is\n\t\tNot responding</string>
+    <string name="notification">Ihalkhata\nNotification</string>
+    <string name="updates">Ihalkhata Updates</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="description">Click on the Android icon to open the Navigation Drawer.</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/period"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Spinner
+                android:id="@+id/period_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:entries="@array/daterange_arrays"
+                android:prompt="@string/daterange_prompt" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/expense_list"
+            style="@style/liststyle" />
+    </LinearLayout>
+
+</FrameLayout>

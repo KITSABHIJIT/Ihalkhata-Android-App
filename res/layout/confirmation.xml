@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/cmp_desc"
+        android:src="@drawable/success_icon"
+        android:tag="Calbook" />
+    <!-- Date Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_date_label"
+        style="@style/conf_label"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/conf_date"
+        style="@style/conf_label"
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@+id/conf_date_label"
+        android:text="@string/na" />
+
+    <!-- Item Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_item_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_date"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/item" />
+
+    <TextView
+        android:id="@+id/conf_item"
+        style="@style/conf_value"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_date"
+        android:layout_toRightOf="@+id/conf_item_label"
+        android:text="@string/na" />
+    <!-- Description Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_description_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_item"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/desc" />
+
+    <TextView
+        android:id="@+id/conf_description"
+        style="@style/conf_value"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_item"
+        android:layout_toRightOf="@+id/conf_description_label"
+        android:text="@string/na" />
+    <!-- Per Head Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_per_head_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_description"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/per_head" />
+
+    <TextView
+        android:id="@+id/conf_per_head"
+        style="@style/conf_value"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_description"
+        android:layout_toRightOf="@+id/conf_description_label"
+        android:text="@string/na" />
+    <!-- Shareholder Count Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_shareholder_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_per_head"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/count" />
+
+    <TextView
+        android:id="@+id/conf_shareholder"
+        style="@style/conf_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_per_head"
+        android:layout_toRightOf="@+id/conf_shareholder_label"
+        android:text="@string/na" />
+
+    <!-- Amount Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_amount_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_shareholder"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/amount" />
+
+    <TextView
+        android:id="@+id/conf_amount"
+        style="@style/conf_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_shareholder"
+        android:layout_toRightOf="@+id/conf_amount_label"
+        android:text="@string/na" />
+
+    <!-- Paid By Confirmation -->
+
+    <TextView
+        android:id="@+id/conf_paid_label"
+        style="@style/conf_label"
+        android:layout_below="@+id/conf_amount"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/paidby" />
+
+    <TextView
+        android:id="@+id/conf_paid"
+        style="@style/conf_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/conf_amount"
+        android:layout_toRightOf="@+id/conf_paid_label"
+        android:text="@string/na" />
+
+</RelativeLayout>

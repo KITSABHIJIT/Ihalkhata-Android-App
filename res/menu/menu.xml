@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         Single menu item
+         Set id, icon and Title for each menu item
+    -->
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/icon_home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/notification"
+        android:title="Notification"/>
+    <item
+        android:id="@+id/menu_entry"
+        android:icon="@drawable/icon_entry"
+        android:title="Enter Data"/>
+    <item
+        android:id="@+id/menu_payments"
+        android:icon="@drawable/icon_payments"
+        android:title="Payments"/>
+    <item
+        android:id="@+id/menu_expense"
+        android:icon="@drawable/icon_expense"
+        android:title="Expense"/>
+    <item
+        android:id="@+id/menu_personalexpense"
+        android:icon="@drawable/icon_personalexpense"
+        android:title="Personal Expense"/>
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/icon_logout"
+        android:title="Logout"/>
+
+</menu>

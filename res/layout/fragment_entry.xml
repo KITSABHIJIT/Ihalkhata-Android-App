@@ -1,0 +1,209 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+
+            <LinearLayout style="@style/linear_entry_layout" >
+
+                <TextView
+                    style="@style/linear_entry_label"
+                    android:text="@string/date" />
+
+                <EditText
+                    android:id="@+id/entry_date"
+                    style="@style/non_editable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center_vertical"
+                    android:ems="6"
+                    android:hint="@string/str_hnt_date"
+                    android:inputType="date"
+                    android:nextFocusDown="@+id/item"
+                    android:singleLine="true" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/date_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/selectdate"
+                    android:cropToPadding="true"
+                    android:src="@drawable/datepicker" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_entry_layout" >
+
+                <TextView
+                    style="@style/linear_entry_label"
+                    android:text="@string/item" />
+
+                <com.example.ihalkhata.customview.CustomAutoCompleteTextView
+                    android:id="@+id/item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:ems="6"
+                    android:hint="@string/str_hnt_autocomplete"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/entry_desc"
+                    android:singleLine="true" >
+                </com.example.ihalkhata.customview.CustomAutoCompleteTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_entry_layout"
+                android:layout_marginBottom="0dp" >
+
+                <TextView
+                    style="@style/linear_entry_label"
+                    android:text="@string/desc" />
+
+                <EditText
+                    android:id="@+id/entry_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:gravity="top|left"
+                    android:hint="@string/str_hnt_desc"
+                    android:inputType="textMultiLine"
+                    android:lines="2"
+                    android:maxLength="20"
+                    android:nextFocusDown="@+id/entry_amount"
+                    android:scrollHorizontally="false" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_entry_layout" >
+
+                <TextView
+                    style="@style/linear_entry_label"
+                    android:text="@string/amount" />
+
+                <EditText
+                    android:id="@+id/entry_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:ems="6"
+                    android:hint="@string/str_hnt_amount"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/entry_allshareholders"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_entry_layout"
+                android:layout_marginBottom="0dp" >
+
+                <CheckBox
+                    android:id="@+id/entry_personal"
+                    style="@style/linear_entry_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/entry_paidby"
+                    android:paddingRight="30sp"
+                    android:text="@string/personal" />
+
+                <CheckBox
+                    android:id="@+id/entry_allshareholders"
+                    style="@style/linear_entry_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nextFocusDown="@+id/entry_paidby"
+                    android:text="@string/allshareholders" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_entry_layout" >
+
+                <TextView
+                    android:id="@+id/entry_label_shareholder"
+                    style="@style/linear_entry_label"
+                    android:text="@string/shareholders" />
+
+                <EditText
+                    android:id="@+id/entry_shareholder"
+                    style="@style/non_editable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:ems="6"
+                    android:hint="@string/str_hnt_shareholder"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/entry_paidby" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/entry_shareholder_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/selectdate"
+                    android:cropToPadding="true"
+                    android:src="@drawable/down" />
+
+                <TextView
+                    android:id="@+id/hidden_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_entry_layout" >
+
+                <TextView
+                    android:id="@+id/entry_label_paidby"
+                    style="@style/linear_entry_label"
+                    android:text="@string/paidby" />
+
+                <EditText
+                    android:id="@+id/entry_paidby"
+                    style="@style/non_editable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:ems="6"
+                    android:hint="@string/str_hnt_paidby"
+                    android:lines="1"
+                    android:nextFocusDown="@+id/entry_button" >
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/entry_paidby_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:contentDescription="@string/selectdate"
+                    android:cropToPadding="true"
+                    android:src="@drawable/down" />
+
+                <TextView
+                    android:id="@+id/hidden_paid_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linear_entry_layout"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/entry_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enterdata" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

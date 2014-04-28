@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:contentDescription="@string/cmp_desc"
+        android:src="@drawable/notification"
+        android:tag="Calbook" />
+
+    <TextView
+        android:id="@+id/noti_label"
+        style="@style/noti_value"
+        android:layout_toRightOf="@+id/success"
+        android:padding="25dip"
+        android:text="@string/notification" />
+
+    <!-- Date notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_date_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/success"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/date" />
+
+    <TextView
+        android:id="@+id/noti_date"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/success"
+        android:layout_toRightOf="@+id/noti_date_label"
+        android:text="@string/na" />
+
+    <!-- Item notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_item_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_date"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/item" />
+
+    <TextView
+        android:id="@+id/noti_item"
+        style="@style/noti_value"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_date"
+        android:layout_toRightOf="@+id/noti_item_label"
+        android:text="@string/na" />
+    <!-- Description notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_description_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_item"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/desc" />
+
+    <TextView
+        android:id="@+id/noti_description"
+        style="@style/noti_value"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_item"
+        android:layout_toRightOf="@+id/noti_description_label"
+        android:text="@string/na" />
+
+    <TextView
+        android:id="@+id/noti_per_head_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_description"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/per_head" />
+
+    <TextView
+        android:id="@+id/noti_per_head"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_description"
+        android:layout_toRightOf="@+id/noti_per_head_label"
+        android:text="@string/na" />
+
+    <!-- Shareholder Count notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_shareholder_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_per_head"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/shareholders" />
+
+    <TextView
+        android:id="@+id/noti_shareholder"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_per_head"
+        android:layout_toRightOf="@+id/noti_shareholder_label"
+        android:text="@string/na" />
+
+    <!-- Shareholder Count notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_shareholder_count_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_shareholder"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/count" />
+
+    <TextView
+        android:id="@+id/noti_count_shareholder"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_shareholder"
+        android:layout_toRightOf="@+id/noti_shareholder_count_label"
+        android:text="@string/na" />
+
+    <!-- Amount notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_amount_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_count_shareholder"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/amount" />
+
+    <TextView
+        android:id="@+id/noti_amount"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_count_shareholder"
+        android:layout_toRightOf="@+id/noti_amount_label"
+        android:text="@string/na" />
+
+    <!-- Paid By notiirmation -->
+
+    <TextView
+        android:id="@+id/noti_paid_label"
+        style="@style/noti_label"
+        android:layout_below="@+id/noti_amount"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/paidby" />
+
+    <TextView
+        android:id="@+id/noti_paid"
+        style="@style/noti_label"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/noti_amount"
+        android:layout_toRightOf="@+id/noti_paid_label"
+        android:text="@string/na" />
+
+</RelativeLayout>

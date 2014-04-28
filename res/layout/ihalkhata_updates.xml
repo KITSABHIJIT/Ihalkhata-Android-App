@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:contentDescription="@string/cmp_desc"
+        android:src="@drawable/ihalkhata_login"
+        android:tag="Calbook" />
+
+    <TextView
+        android:id="@+id/noti_label"
+        style="@style/noti_value"
+        android:layout_toRightOf="@+id/success"
+        android:padding="25dip"
+        android:text="@string/updates" />
+
+    <!-- Date notiirmation -->
+
+    <TextView
+        android:id="@+id/update_label"
+        style="@style/noti_label"
+        android:layout_width="180dp"
+        android:layout_below="@+id/success"
+        android:layout_toRightOf="@+id/success"
+        android:text="@string/loading" />
+
+</RelativeLayout>

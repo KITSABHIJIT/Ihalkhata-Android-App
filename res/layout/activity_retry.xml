@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip" 
+    android:paddingTop="?attr/actionBarSize">
+
+    <!-- Email input text -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:contentDescription="@string/cmp_desc"
+        android:src="@drawable/logo"
+        android:tag="Calbook" />
+
+    <TextView
+        android:id="@+id/retry_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="@string/try_again_text"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again" />
+
+</LinearLayout>
